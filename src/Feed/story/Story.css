@@ -1,0 +1,40 @@
+.story {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 250px;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+}
+.story:hover {
+    transform: scale(1.07);
+}
+.story__avatar {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #2e86de;
+    border-radius: 50%;
+    transition: transform 100ms ease-in;
+
+}
+.story__avatar:Img:hover{
+    transform: scale(1.1);
+
+}
+
+.story > h4 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+}

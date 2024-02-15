@@ -1,0 +1,35 @@
+.app__body{
+    display: flex;
+    background-color: #f8f8f8;
+}
+.app{
+    background-color: whitesmoke;
+}
+
+body {
+    --sb-track-color: #50575a;
+    --sb-thumb-color: #0e247d;
+    --sb-size: 10px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 15px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 15px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
